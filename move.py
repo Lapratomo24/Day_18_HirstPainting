@@ -8,6 +8,5 @@ for x in range(15):
     timmy.pendown()
     timmy.color("red")
 
-
 screen = Screen()
 screen.exitonclick()
