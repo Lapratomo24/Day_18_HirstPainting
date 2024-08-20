@@ -14,12 +14,15 @@ def coloring():
     return colors
 
 
-for x in range(100):
-    tim.color(coloring())
-    tim.speed(0)
-    tim.circle(100)
-    tim.tiltangle(45)
-    tim.right(25)
+def draw_circle(stopgap):
+    for x in range(int(360 / stopgap)):
+        tim.color(coloring())
+        tim.speed(0)
+        tim.circle(100)
+        tim.setheading(tim.heading() + stopgap)
+
+
+draw_circle(5)
 
 screen = Screen()
 screen.exitonclick()
