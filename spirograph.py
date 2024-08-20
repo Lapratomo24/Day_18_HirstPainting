@@ -22,7 +22,7 @@ def draw_circle(stopgap):
         tim.setheading(tim.heading() + stopgap)
 
 
-draw_circle(5)
+draw_circle(10)
 
 screen = Screen()
 screen.exitonclick()
